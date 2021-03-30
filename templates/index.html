@@ -1,0 +1,18 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+    ToDOApp
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
+{% endblock styles %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1>Welcome to your ToDo App!</h1>
+    <p>The best to-do app build using Flask and Bootstrap!</p>
+    <p><a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Log in</a></p>
+</div>
+{% endblock content %}

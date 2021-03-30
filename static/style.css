@@ -1,0 +1,26 @@
+.jumbotron, .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    width: 80%;
+    border-radius: 15px;
+}
+.dashboard {
+    padding: 15px;
+}
+.dashboard .panel-body {
+    font-weight: bold; 
+}
+@media only screen and (min-width: 768px) {
+    .jumbotron {
+        width: auto;
+    }
+    .container {
+        width: 50%;
+    }
+    .dashboard {
+        width: 60%;
+    }
+}
