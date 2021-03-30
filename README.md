@@ -23,10 +23,11 @@ Ideally the following feature should be implemented:
 
 ## Steps required to run the app locally
 
-1. Install flask with its all dependencies listed inside the requirements.txt file
+Install flask with its all dependencies listed inside the requirements.txt file and run the project.
 
 ```
 $ pip install -r requirements.txt
+$ flask run
 ```
 
 ## Login details
