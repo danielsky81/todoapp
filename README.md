@@ -23,13 +23,11 @@ Ideally the following feature should be implemented:
 
 ## Steps required to run the app locally
 
-Install flask with its all dependencies listed inside the requirements.txt file
+1. Install flask with its all dependencies listed inside the requirements.txt file
 
 ```
 $ pip install -r requirements.txt
 ```
-
-Set 'SECRET_KEY' and 'SQLALCHEMY_DATABASE_URI' absolute path for the database inside the todo.py
 
 ## Login details
 
