@@ -29,4 +29,20 @@ Install flask with its all dependencies listed inside the requirements.txt file
 $ pip install -r requirements.txt
 ```
 
-Set 'SECRET_KEY' and 'SQLALCHEMY_DATABASE_URI' absolute path for the database
+Set 'SECRET_KEY' and 'SQLALCHEMY_DATABASE_URI' absolute path for the database inside the todo.py
+
+## Login details
+
+### User 1
+
+```
+username: andrew
+password: password
+```
+
+### User 2
+
+```
+username: daniel
+password: password
+```
