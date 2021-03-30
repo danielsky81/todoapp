@@ -10,15 +10,15 @@ Based on that brief, the project was build using Flask with sqlite3 database for
 
 ## The UX
 
-The ToDo App is aimed toe help user create a quick tasks that can be stored for future reference or removed once complited. The design is minimalistic with cluttter free approach.
+The ToDo App is aimed to help user create a quick tasks that can be stored for future reference or removed once complited. The design is minimalistic with clutter free approach.
 
 ## Features Left to Implement
 
 Ideally the following feature should be implemented:
 
-- data and time of task creation
+- date and time of task creation
 - deadline for task
-- color coding for tasks to add better visual appear to the app and allow quick visual scan of the content
+- color coding for different tasks purpose to add better visual appear to the app and allow quick visual scan of the tasks
 - reach dashboard with profile image
 
 ## Steps required to run the app locally
