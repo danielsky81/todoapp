@@ -2,8 +2,7 @@
     --white: #ffffff;
     --blue: #3f5fe0;
     --black: #333333;
-    --orange: #f57647;
-    --green: #6ad169;
+    --red: #e05573;
 }
 body {
     background: url('../static/assets/bkg-image.jpg') no-repeat center center fixed;
@@ -13,14 +12,17 @@ body {
     background-size: cover;
 }
 .bkg {
-    background-color: var(--white);
-    background: none;
+    background: url('../static/assets/bkg-image-white.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .text-blue {
     color: var(--blue);
 }
 .text-orange {
-    color: var(--orange);
+    color: var(--red);
 }
 .text-black {
     color: var(--black);
@@ -28,15 +30,12 @@ body {
 .text-white {
     color: var(--white);
 }
-.text-green {
-    color: var(--green);
-}
 .nav-link {
     color: var(--blue);
     text-decoration: underline;
 }
 .nav-link:hover, .nav-link:focus, .nav-link:active:focus {
-    color: var(--orange);
+    color: var(--red);
 }
 .btn-default {
     color: var(--black);
@@ -44,9 +43,9 @@ body {
     border-color: var(--black);
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active:focus {
-    color: var(--orange);
+    color: var(--red);
     background-color: var(--white);
-    border-color: var(--orange);
+    border-color: var(--red);
 }
 .btn-primary {
     color: var(--white);
@@ -60,23 +59,13 @@ body {
     -webkit-box-shadow: 6px 6px 12px 2px rgba(63,95,224,0.5); 
     box-shadow: 6px 6px 12px 2px rgba(63,95,224,0.5);
 }
-.btn-success {
-    color: var(--white);
-    background-color: var(--green);
-    border-color: var(--white);
-}
-.btn-success:hover, .btn-success:focus, .btn-success:active:focus {
-    color: var(--green);
-    background-color: var(--white);
-    border-color: var(--green);
-}
 .btn-danger {
     color: var(--white);
-    background-color: var(--orange);
-    border-color: var(--orange);
+    background-color: var(--red);
+    border-color: var(--red);
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active:focus {
-    color: var(--orange);
+    color: var(--red);
     background-color: var(--white);
     border-color: var(--white);
     -webkit-box-shadow: 6px 6px 12px 2px rgba(245,118,71,0.5); 
@@ -102,7 +91,6 @@ body {
 }
 .dashboard {
     position: relative;
-    background-color: var(--white);
 }
 .logout {
     position: absolute;
@@ -116,7 +104,6 @@ body {
     margin: 0;
     margin-bottom: 15px;
     padding: 45px 15px 30px 15px;
-    background-color: var(--white);
     color: var(--black);
 }
 .page-header h1 {
@@ -126,7 +113,12 @@ body {
 }
 .panel {
     position: relative;
-    background-color: var(--blue);
+    /* background-color: var(--blue); */
+    background: url('../static/assets/bkg-image-sm.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: var(--white);
     border: var(--blue);
     height: 100px;
@@ -181,8 +173,7 @@ body {
         padding: 45px 15px 30px 15px;
     }
     .page-header {
-        border-bottom: 0;
-        border-right: 1px solid #eee;
+        border: none;
     }
     .logout {
         right: unset;
