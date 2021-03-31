@@ -25,17 +25,11 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(80))
     tasks = db.relationship('Task', backref='author', lazy=True)
 
-    def __repr__(self):
-        return f"User('{self.username}')"
-
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    task = db.Column(db.String(160), nullable=False)
+    task = db.Column(db.String(80), nullable=False)
     date_added = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-
-    def __repr__(self):
-        return f"Task('{self.task}', '{self.date_added}')"
 
 @login_manager.user_loader
 def load_user(user_id):

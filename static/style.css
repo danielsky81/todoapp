@@ -1,3 +1,96 @@
+:root {
+    --white: #ffffff;
+    --blue: #3f5fe0;
+    --black: #333333;
+    --orange: #f57647;
+    --green: #6ad169;
+}
+body {
+    background: url('../static/assets/bkg-image.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bkg {
+    background-color: var(--white);
+    background: none;
+}
+.text-blue {
+    color: var(--blue);
+}
+.text-orange {
+    color: var(--orange);
+}
+.text-black {
+    color: var(--black);
+}
+.text-white {
+    color: var(--white);
+}
+.text-green {
+    color: var(--green);
+}
+.nav-link {
+    color: var(--blue);
+    text-decoration: underline;
+}
+.nav-link:hover, .nav-link:focus, .nav-link:active:focus {
+    color: var(--orange);
+}
+.btn-default {
+    color: var(--black);
+    background-color: var(--white);
+    border-color: var(--black);
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active:focus {
+    color: var(--orange);
+    background-color: var(--white);
+    border-color: var(--orange);
+}
+.btn-primary {
+    color: var(--white);
+    background-color: var(--blue);
+    border-color: var(--white);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active:focus {
+    color: var(--blue);
+    background-color: var(--white);
+    border-color: var(--blue);
+    -webkit-box-shadow: 6px 6px 12px 2px rgba(63,95,224,0.5); 
+    box-shadow: 6px 6px 12px 2px rgba(63,95,224,0.5);
+}
+.btn-success {
+    color: var(--white);
+    background-color: var(--green);
+    border-color: var(--white);
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active:focus {
+    color: var(--green);
+    background-color: var(--white);
+    border-color: var(--green);
+}
+.btn-danger {
+    color: var(--white);
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active:focus {
+    color: var(--orange);
+    background-color: var(--white);
+    border-color: var(--white);
+    -webkit-box-shadow: 6px 6px 12px 2px rgba(245,118,71,0.5); 
+    box-shadow: 6px 6px 12px 2px rgba(245,118,71,0.5);
+}
+.jumbotron, .form-wrapper {
+    background-color: var(--white);
+    color: var(--blue);
+    -webkit-box-shadow: 6px 6px 12px 2px rgba(63,95,224,0.5); 
+    box-shadow: 6px 6px 12px 2px rgba(63,95,224,0.5);
+}
+.jumbotron p:last-child {
+    font-size: 16px;
+}
 .jumbotron, .container {
     position: absolute;
     top: 50%;
@@ -8,10 +101,73 @@
     border-radius: 15px;
 }
 .dashboard {
-    padding: 15px;
+    position: relative;
+    background-color: var(--white);
 }
-.dashboard .panel-body {
-    font-weight: bold; 
+.logout {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.checkbox, .control-label, .form-control {
+    color: var(--black);
+}
+.page-header {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 45px 15px 30px 15px;
+    background-color: var(--white);
+    color: var(--black);
+}
+.page-header h1 {
+    margin: 0;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.panel {
+    position: relative;
+    background-color: var(--blue);
+    color: var(--white);
+    border: var(--blue);
+    height: 100px;
+    -webkit-box-shadow: 6px 6px 12px 2px rgba(63,95,224,0.5); 
+    box-shadow: 6px 6px 12px 2px rgba(63,95,224,0.5);
+}
+.panel-body {
+    padding: 0 15px;
+    height: 100%;
+}
+.panel-body .row, .panel-body form {
+    height: 100%;
+}
+.task-details {
+    padding: 15px;
+    padding-right: 70px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.task-details p:first-child {
+    font-size: 14px;
+}
+.task-details p:last-child {
+    margin: 0;
+}
+.btn-done {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 50px;
+    right: 15px;
+    margin: 0 auto;
+    padding: 0;
+}
+.btn-done .btn {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
 }
 @media only screen and (min-width: 768px) {
     .jumbotron {
@@ -22,5 +178,23 @@
     }
     .dashboard {
         width: 60%;
+        padding: 45px 15px 30px 15px;
+    }
+    .page-header {
+        border-bottom: 0;
+        border-right: 1px solid #eee;
+    }
+    .logout {
+        right: unset;
+        left: 15px;
+    }
+    .task-details {
+        padding-right: 100px;
+    }
+    .task-details p:first-child {
+        font-size: 18px;
+    }
+    .btn-done {
+        right: 25px;
     }
 }

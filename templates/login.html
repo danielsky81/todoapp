@@ -11,7 +11,7 @@ Login
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container form-wrapper">
 
       <form class="form-signin" method="POST" action="/login">
         <h2 class="form-signin-heading">Please sign in</h2>
@@ -23,7 +23,7 @@ Login
       </form>
       <br>
       <div>
-          <p>Dont have account yet? Please register <a class="nav-item nav-link" href="{{ url_for('register') }}">here</a></p>
+          <p class="text-black">Dont have account yet? Please register <a class="nav-item nav-link" href="{{ url_for('register') }}">here</a></p>
       </div>
 
     </div>

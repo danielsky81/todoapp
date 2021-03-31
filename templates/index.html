@@ -12,7 +12,8 @@
 {% block content %}
 <div class="jumbotron">
     <h1>Welcome to your ToDo App!</h1>
-    <p>The best to-do app build using Flask and Bootstrap!</p>
-    <p><a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Log in</a></p>
+    <p class="text-black">The best to-do app build using Flask and Bootstrap!</p>
+    <p class="text-center"><a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Log in</a></p>
+    <p class="text-center text-black">or sign up <a class="nav-item nav-link" href="{{ url_for('register') }}">here</a></p>
 </div>
 {% endblock content %}

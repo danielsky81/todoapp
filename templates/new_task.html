@@ -11,8 +11,8 @@
 {% endblock styles %}
 
 {% block content %}
-    <div class="container">
-
+    <div class="container form-wrapper">
+        <a class="btn btn-danger pull-right" href="{{ url_for('dashboard') }}" role="button"><span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span></a>
         <form class="form-signin" method="POST" action="">
           <h2 class="form-signin-heading">Please add new task below:</h2>
           {{ form.hidden_tag() }}
