@@ -46,8 +46,9 @@ In order to make the app secure, all user details are stored in the database wit
 
 Install flask with its all dependencies listed inside the requirements.txt file and run the project.
 
+*update - I have changed the todo.py to app.py so you can run the 'flask run' command only. You might need to change the absolute path for the database as well.
+
 ```
-$ pip install -r requirements.txt
 $ flask run
 ```
 
